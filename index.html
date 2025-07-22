@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Texto para ASCII</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/figlet@1.5.0/lib/figlet.min.js"></script>
+    <script src="./fonts/figlet-fonts.js"></script>
+</head>
+<body>
+    <section>
+        <div class="ascii-art">
+            <pre>
+__        _______ _     _     ____ ___  __  __ _____ _ 
+\ \      / / ____| |   | |   / ___/ _ \|  \/  | ____| |
+ \ \ /\ / /|  _| | |   | |  | |  | | | | |\/| |  _| | |
+  \ V  V / | |___| |___| |__| |__| |_| | |  | | |___|_|
+   \_/\_/  |_____|_____|_____\____\___/|_|  |_|_____(_)
+            </pre>
+        </div>
+    </section>
+
+    <h1>Texto ➜ ASCII</h1>
+    <form id="converter-form" onsubmit="return false;">
+        <label for="texto">Digite seu texto aqui:</label>
+        <input type="text" id="texto" name="texto" placeholder="Ex: Hello, World!" required>
+        <button type="submit" id="btn-converter">Converter</button>
+        <select id="font">
+            <option value="Standard">Standard</option>
+            <option value="Ghost">Ghost</option>
+            <option value="3D-ASCII">3D-ASCII</option>
+            <option value="Slant">Slant</option>
+        </select>
+        <pre id="resultado"></pre>
+        <button id="btn-copiar">Copiar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>Desenvolvido por Raik.</p>
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/DanielRaik/" target="_blank">Github</a>
+</html>
