@@ -30,15 +30,20 @@ __        _______ _     _     ____ ___  __  __ _____ _
     <form id="converter-form" onsubmit="return false;">
         <label for="texto">Digite seu texto aqui:</label>
         <input type="text" id="texto" name="texto" placeholder="Ex: Hello, World!" required>
-        <button type="submit" id="btn-converter">Converter</button>
-        <select id="font">
-            <option value="Standard">Standard</option>
-            <option value="Ghost">Ghost</option>
-            <option value="3D-ASCII">3D-ASCII</option>
-            <option value="Slant">Slant</option>
-        </select>
+        
+        <div class="mobile-buttons">
+            <select id="font">
+                <option value="Standard">Standard</option>
+                <option value="Ghost">Ghost</option>
+                <option value="3D-ASCII">3D-ASCII</option>
+                <option value="Slant">Slant</option>
+            </select>
+            
+            <button type="submit" id="btn-converter">Converter</button>
+            <button id="btn-copiar">Copiar</button>
+        </div>
+        
         <pre id="resultado"></pre>
-        <button id="btn-copiar">Copiar</button>
     </form>
     <script src="script.js"></script>
 </body>
@@ -46,4 +51,5 @@ __        _______ _     _     ____ ___  __  __ _____ _
     <p>Desenvolvido por Raik.</p>
         <i class="fa-brands fa-github"></i>
         <a href="https://github.com/DanielRaik/" target="_blank">Github</a>
+</footer>
 </html>
